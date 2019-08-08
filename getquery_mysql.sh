@@ -2,13 +2,13 @@
 MYSQL=mysql #选用mysql程序
 
 USER1=root   #设定用户名
-PASSWORD1="lzxg@webqa" #设定数据库的用户密码
+PASSWORD1="passwd" #设定数据库的用户密码
 DB1=lizhimonitor #选定需要的数据库
 
 USER2=main_project   #设定用户名
 PASSWORD2="main_project" #设定数据库的用户密码
 DB2=main_project #选定需要的数据库
-HOST2="10.134.104.40"
+HOST2="host_ip"
  
 #从召回率任务表中拉取最近一个任务 
 SQL_GET_TASKID="select task_id from lizhi_task order by task_id desc limit 1"
