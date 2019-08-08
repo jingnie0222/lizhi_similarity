@@ -10,10 +10,10 @@ import Mail
 
 query_file = "./lizhi_query"
 
-query_db = pymysql.connect(host="10.144.96.115", user="root", passwd="lzxg@webqa", db="lizhimonitor", charset="utf8")
+query_db = pymysql.connect(host="host", user="root", passwd="passwd", db="lizhimonitor", charset="utf8")
 query_corsur = query_db.cursor()
 
-result_db = pymysql.connect(host="10.134.104.40", user="main_project", passwd="main_project", db="main_project", charset="utf8")
+result_db = pymysql.connect(host="host", user="main_project", passwd="main_project", db="main_project", charset="utf8")
 result_corsur = result_db.cursor()
 
 report_tmp_path = "mail.html"
