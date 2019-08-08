@@ -52,7 +52,7 @@ class quickRun(object):
             text_b = baidu_web.text
             line = {"realname": "kgm", "text_a": text_a, "text_b": text_b}
             headers = {"Content-type": "application/x-www-form-urlencoded;charset=UTF-16LE"}
-            base_resp = requests.post("http://10.134.120.30:8888/similarity-api", data=line, headers=headers)
+            base_resp = requests.post("http://xiangsidujiekou:8888/similarity-api", data=line, headers=headers)
             #if int(base_resp.text) == 0 and text_a and text_b:
             if base_resp.text and int(base_resp.text) == 0 and "None" not in text_a and "None" not in text_b:
                 #print("Query:\t{}".format(query))
